@@ -1,0 +1,66 @@
+.transaction-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+    background: linear-gradient(90deg, #0d47a1, #1e88e5, #1e88e5, #90caf9); /* Deep-to-light blue gradient */
+
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.transaction-table thead {
+  /* background: rgba(255, 255, 255, 0.1); */
+      background: linear-gradient(90deg, #0d47a1, #1e88e5, #1e88e5, #90caf9) !important; /* Deep-to-light blue gradient */
+
+}
+.transaction-table th {
+  background: none;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.transaction-table th {
+  font-weight: bold;
+  color: #ffffffcc;
+}
+
+.transaction-table td {
+  color: #ffffffbb;
+}
+
+.transaction-table tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.2s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+
+
+
+@media (max-width: 741px) {
+  .date-column {
+    display: none;
+  }
+}
+@media (max-width: 565px) {
+  .message-column {
+    display: none;
+  }
+}
+
+

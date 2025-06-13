@@ -1,0 +1,54 @@
+/* SendMoneyForm.css or inside User.css */
+.send-money-form {
+      background: linear-gradient(90deg, #0d47a1, #1e88e5, #1e88e5, #90caf9); /* Deep-to-light blue gradient */
+
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 60px 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.send-money-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.send-money-form input {
+  width: 92%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.send-money-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.send-money-form button {
+  width: 50%;
+  display: block;         /* Ensure it behaves like a block-level element */
+  margin: 0 auto; 
+  padding: 0.75rem;
+  background: white;
+  color: #0d47a1;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-money-form button:hover {
+    color: #0d47a1;
+  background: white;
+}

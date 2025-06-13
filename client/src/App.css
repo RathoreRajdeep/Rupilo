@@ -1,0 +1,123 @@
+/* App.css */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+.topbackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 90px;
+  background-color: #052d6a; /* Dark background */
+  z-index: 6; /* Lowest layer */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* Optional shadow for depth */
+}
+
+.admin-choice-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  gap: 40px;
+  height: calc(100vh - 90px);
+  margin-top: 80px;
+}
+
+/* LEFT - Image Section */
+.admin-choice-left-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.admin-choice-left-image img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.admin-choice-left-image img:hover {
+  transform: scale(1.05);
+}
+
+/* RIGHT - Buttons & Text */
+.admin-choice-right-content {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.admin-choice-right-content h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: black;
+}
+
+.admin-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.admin-button-block {
+  margin-bottom: 30px;
+}
+
+.admin-button-block button {
+  width: fit-content;
+  padding: 14px 28px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(13, 71, 161, 0.35);
+}
+
+.admin-button-block button:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 22px rgba(13, 71, 161, 0.55);
+}
+
+.button-description {
+  margin-top: 10px;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+#topup-offset,#sendmoney-offset{
+  margin-top: -310px;
+  padding-top: 310px;
+}
+@media (max-width: 960px) {
+  #topup-offset{
+      margin-top: 0px;padding-top: 0px;
+      scroll-margin-top: -180px; /* Adjust as needed */
+  }
+}
+@media (max-width: 911px) {
+  #sendmoney-offset{
+      margin-top: 0px;padding-top: 0px;
+      scroll-margin-top: 70px; /* Adjust as needed */
+  }
+  #topup-offset{
+    margin-top: 0px;padding-top: 0px;
+    scroll-margin-top: 30px; /* Adjust as needed */
+  }
+}
+

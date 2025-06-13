@@ -1,0 +1,70 @@
+
+.topup-form-container {
+    background: linear-gradient(90deg, #0d47a1, #1e88e5, #1e88e5, #90caf9); /* Deep-to-light blue gradient */
+
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+    padding: 100px 30px;
+  margin: 2rem auto;
+  max-width: 300px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.topup-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.topup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.topup-form label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #dddddd;
+}
+
+.topup-input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ffffff33;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 16px;
+}
+
+.topup-input:focus {
+  outline: none;
+  border-color: #90caf9;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.topup-button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: #0d47a1;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.topup-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.topup-message {
+  margin-top: 1rem;
+  font-size: 14px;
+  text-align: center;
+  color: #eeeeee;
+}
