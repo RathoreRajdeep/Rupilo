@@ -41,7 +41,7 @@ app.use("/api/topup-requests", authenticate, topupRequestRoutes);
 
 // Root
 app.get("/", (req, res) => {
-  res.send("Welcome to Rupix API 🚀");
+  res.send("Welcome to Rupilo API 🚀");
 });
 
 // MongoDB + start server
