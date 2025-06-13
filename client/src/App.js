@@ -72,7 +72,7 @@ const App = () => {
 
   return (
     <div className="forbackground">
-      <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://rupilo.onrender.com" target="_blank" rel="noopener noreferrer">
   <img src={logo} alt="Rupilo Logo" className="hero-logo" />
 </a>
 
