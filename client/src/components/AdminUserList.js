@@ -9,7 +9,7 @@ const AdminUserList = ({ token }) => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/profile/all', {
+        const res = await axios.get('https://rupilobackend.onrender.com/api/profile/all', {
           headers: {
             Authorization: `Bearer ${token}`
           }

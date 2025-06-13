@@ -20,7 +20,7 @@ const TransactionHistory = ({ token }) => {
 
     const fetchTransactions = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/transactions/my', {
+        const res = await axios.get('https://rupilobackend.onrender.com/api/transactions/my', {
           headers: {
             Authorization: `Bearer ${token}`
           }

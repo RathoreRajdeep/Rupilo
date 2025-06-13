@@ -33,7 +33,7 @@ const SignupForm = ({ onSuccess }) => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post('http://localhost:5000/api/auth/signup', form);
+      await axios.post('https://rupilobackend.onrender.com/api/auth/signup', form);
       setSuccessMessage('Sign up successful, redirecting to login page...');
       setTimeout(() => {
         setLoading(false);

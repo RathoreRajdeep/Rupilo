@@ -12,7 +12,7 @@ const TopupRequestsList = () => {
     const fetchRequests = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:5000/api/topup-requests", {
+        const response = await axios.get("https://rupilobackend.onrender.com/api/topup-requests", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -30,7 +30,7 @@ const TopupRequestsList = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `http://localhost:5000/api/topup-requests/${id}/${action}`,
+        `https://rupilobackend.onrender.com/api/topup-requests/${id}/${action}`,
         {},
         {
           headers: {

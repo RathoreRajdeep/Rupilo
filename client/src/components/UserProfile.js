@@ -11,7 +11,7 @@ const UserProfile = ({ token }) => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/profile", {
+        const res = await axios.get("https://rupilobackend.onrender.com/api/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setProfile(res.data);

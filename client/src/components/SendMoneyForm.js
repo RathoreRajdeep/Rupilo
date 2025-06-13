@@ -22,7 +22,7 @@ const SendMoneyForm = ({ token }) => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/payments/send",
+        "https://rupilobackend.onrender.com/api/payments/send",
         form,
         {
           headers: {
